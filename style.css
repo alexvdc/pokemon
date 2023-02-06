@@ -38,6 +38,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    /* * ne marche que sur Firefox si le parent n'est pas ciblé */
+    backface-visibility: hidden;
 }
 .verso img {
     object-fit: contain;
@@ -186,7 +188,6 @@ body {
 input {
     margin: 0 0.75rem;
     font-weight: bold;
-    /* transition: all 0.3s ease-in-out; */
 }
 
 
